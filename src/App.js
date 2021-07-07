@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import HeaderComponent from './components/header/header.component';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         </section>
       </nav>
       <section>
-        <h2>Welcome to the Redux Fundamentals example app!</h2>
+        <h2>TODO LIST APP</h2>
       </section>
+      <HeaderComponent/>
     </div>
   )
 }
