@@ -1,0 +1,60 @@
+.footer{
+    display: flex;
+}
+
+.actions, .remainingTodos, .statusFilters, .colorFilters{
+    display: flex;
+    flex-direction: column;
+}
+
+.ActionBtn{
+    background-color: rgb(0, 121, 190);
+    color: rgb(255, 255, 255);
+    outline: none; 
+    height: 2.3rem;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter p{
+    margin-bottom: 0;
+}
+
+.box{
+    height: 15px;
+    width: 25px;
+    margin: 0 10px;
+}
+
+.green{
+    background-color: #008000;
+}
+.blue{
+    background-color: #0849fd;
+}
+.orange{
+    background-color: #ffbb01;
+}
+.purple{
+    background-color: #7c00b6;
+}
+.red{
+    background-color: #ff0505;
+}
+
+.statusFilters h5{
+    margin-bottom: 0.75rem;
+}
+
+.statusBtn{
+    margin-bottom: 0.5rem;
+    background-color: rgb(247, 247, 247);
+    height: 2rem;
+    width: 5.5rem;
+    box-shadow: 1px 1px 2px gray;
+}
