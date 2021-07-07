@@ -35,22 +35,12 @@
 .deleteIcon{
     width: 30px;
     height: 30px;
-    border: 2px solid rgb(0, 0, 0);
-    position: relative;
+    margin: 5px 0px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-  .deleteIcon:before, .deleteIcon:after {
-    position: absolute;
-    left: 47%;
-    bottom: -4%;
-    content: ' ';
-    height: 28px;
-    width: 2px;
-    background-color: #333;
-  }
-  .deleteIcon:before {
-    transform: rotate(45deg);
-  } 
-  .deleteIcon:after {
-    transform: rotate(-45deg);
-  }
+  
   

@@ -22,7 +22,7 @@ const TodoItem = (props)=>{
       </div>
       <p className="todoText">{props.text}</p>
       <ColorCoder {...props}/>
-      <a href='#' className="deleteIcon" onClick={itemDelete}/>
+      <p className="deleteIcon" onClick={itemDelete}>&#10005;</p>
     </li>
   )
 }

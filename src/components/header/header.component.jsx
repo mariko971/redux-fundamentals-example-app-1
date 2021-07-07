@@ -21,7 +21,7 @@ const HeaderComponent = ()=>{
         console.log(todoInput)
         
         dispatch(saveNewTodo(todoInput));
-        //console.log()
+        
        setTodoInput('')
     }
 
@@ -33,7 +33,7 @@ const HeaderComponent = ()=>{
            <TodoList/>
            <Footer/>
        </div> 
-       //<listIem/>
+       
     )
 }
 

@@ -1,20 +1,7 @@
 import { client } from '../../api/client'
 
 
-const initialState = [
-  // {id:0, text:'LEARN REACT', completed:false, color:''},
-  // {id:1, text:'LEARN REDUX', completed:false, color:''},
-  // {id:2, text:'LEARN NODEJS', completed:true, color:''},
-  // {id:3, text:'LEARN PYTHON', completed:false, color:''}
-]
-  
-
-  // function nextTodoId(todos) {
-  //   const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1)
-  //   return maxId + 1
-  // }
-
-  
+const initialState = [];
 
   export default function TodosReducer(state = initialState, action) {
     switch (action.type) {
@@ -53,13 +40,13 @@ const initialState = [
       }
       case 'todos/todoDeleted': { //payload : todoId
         return ( 
-           // ...state,
+          
             state.filter(todo =>todo.id !== action.payload)
         )
       }
       case 'todos/allCompleted':{
         return ( 
-           // ...state,
+           
             state.map(todo=>{
                 return{
                     ...todo,
@@ -71,7 +58,7 @@ const initialState = [
       }
       case 'todos/completedCleared': {
         return ( 
-            //...state,
+            
             state.filter(todo=>!todo.completed)
         )
       }
