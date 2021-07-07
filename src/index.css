@@ -2,6 +2,9 @@
   --redux-color: #764abc;
 }
 
+*{
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
